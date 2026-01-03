@@ -1,0 +1,159 @@
+{
+    "summary": {
+        "executive_summary": "The subject company is a well-established manufacturer of industrial automotive parts. Recent financial performance shows strong revenue growth driven by expansion into EV components, though leverage remains slightly elevated. The management team has a proven track record, and the market outlook for their niche remains positive despite global supply chain fluctuations.",
+        "recommendation": "Conditional Approval",
+        "key_takeaways": [
+            "Market share increased by 4% in the last 12 months.",
+            "Successful pivot to EV component manufacturing.",
+            "Current ratio remains healthy at 1.8x.",
+            "Primary risk is high debt-to-equity relative to smaller peers."
+        ]
+    },
+    "financial_metrics": [
+        {
+            "category": "Liquidity",
+            "label": "Current Ratio",
+            "value": 1.85,
+            "unit": "ratio",
+            "status": "healthy",
+            "is_calculated": true,
+            "source": {
+                "page_number": 12,
+                "snippet": "Current assets of $5.2M against current liabilities of $2.8M."
+            }
+        },
+        {
+            "category": "Profitability",
+            "label": "EBITDA Margin",
+            "value": 14.2,
+            "unit": "%",
+            "status": "healthy",
+            "is_calculated": true,
+            "source": {
+                "page_number": 8,
+                "snippet": "Operating income before depreciation was reported at $1.4M on sales of $10M."
+            }
+        },
+        {
+            "category": "Leverage",
+            "label": "Debt-to-Equity",
+            "value": 2.4,
+            "unit": "ratio",
+            "status": "warning",
+            "is_calculated": false,
+            "source": {
+                "page_number": 15,
+                "snippet": "Total liabilities over total equity stands at 2.4x as of Dec 2025."
+            }
+        }
+    ],
+    "credit_analysis_5cs": {
+        "character": {
+            "assessment": "CEO has 15+ years in automotive. Company has no litigation history. Clean credit report for all key principals.",
+            "confidence": 0.95,
+            "source_citations": [
+                {
+                    "page": 3,
+                    "snippet": "Management team led by CEO John Doe, former VP at Tier-1 supplier."
+                }
+            ]
+        },
+        "capacity": {
+            "repayment_source": "Operating cash flow from EV component contract with Major OEM.",
+            "ratios": {
+                "dscr": 1.45,
+                "interest_coverage": 3.8
+            },
+            "confidence": 0.88,
+            "source_citations": [
+                {
+                    "page": 22,
+                    "snippet": "Debt Service Coverage Ratio calculated at 1.45x for the trailing 12 months."
+                }
+            ]
+        },
+        "capital": {
+            "equity_position": "Tier 1 capital remains stable at $12M.",
+            "leverage_ratio": 2.1,
+            "net_worth": 15500000,
+            "confidence": 0.9,
+            "source_citations": [
+                {
+                    "page": 14,
+                    "snippet": "Net worth increased by $1.2M through retained earnings."
+                }
+            ]
+        },
+        "collateral": {
+            "pledged_assets": [
+                "Real Estate (Factory)",
+                "Inventory",
+                "Accounts Receivable"
+            ],
+            "ltv_ratio": 65,
+            "valuation": 8500000,
+            "confidence": 0.82,
+            "source_citations": [
+                {
+                    "page": 18,
+                    "snippet": "Primary factory appraised at $5.5M in Nov 2025."
+                }
+            ]
+        },
+        "conditions": {
+            "loan_purpose": "Refinancing existing debt and working capital for EV line.",
+            "market_outlook": "Increasing demand for EV parts globally.",
+            "covenants": [
+                "DSCR > 1.25",
+                "Max Leverage < 3.0"
+            ],
+            "confidence": 0.85,
+            "source_citations": [
+                {
+                    "page": 5,
+                    "snippet": "Loan will facilitate the modernization of Line B for EV motors."
+                }
+            ]
+        }
+    },
+    "risk_assessment": {
+        "red_flags": [
+            {
+                "issue": "High reliance on single OEM contract",
+                "severity": "Med",
+                "confidence": 0.75,
+                "mitigant": "Company is RFP status for two additional domestic manufacturers.",
+                "source": {
+                    "page": 31,
+                    "snippet": "OEM Contract Alpha accounts for 45% of total revenue."
+                }
+            }
+        ],
+        "strengths": [
+            {
+                "text": "Leading market position in specialized gasket segment",
+                "source": {
+                    "page": 6,
+                    "snippet": "Company holds 22% share in high-heat gasket niche."
+                }
+            }
+        ],
+        "weaknesses": [
+            {
+                "text": "Limited liquidity due to heavy machinery investment",
+                "source": {
+                    "page": 13,
+                    "snippet": "Cash on hand dropped to $400k following equipment acquisition."
+                }
+            }
+        ]
+    },
+    "metadata": {
+        "document_id": "8f3e2b1c-9d0a-4b7e-af5c-1d2a3b4c5d6e",
+        "document_name": "Credit_Analysis_Sheet_Final.pdf",
+        "pages_analyzed": 45,
+        "overall_confidence": 0.89,
+        "processing_time_ms": 4200,
+        "model_info": "Grok-1 Specialist"
+    }
+}
