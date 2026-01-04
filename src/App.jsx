@@ -34,7 +34,8 @@ const Analysis = () => {
 
     try {
       // Connect to the actual backend endpoint
-      const response = await fetch("https://huggingface.co/spaces/giz17/Wizcoders-Mclaren-Orix-Hackathon/docs#/default/analyze_financial_statement_analyze_post", {
+      const API_URL = import.meta.env.VITE_API_URL || "https://giz17-wizcoders-mclaren-orix-hackathon.hf.space";
+      const response = await fetch(`${API_URL}/analyze`, {
         method: "POST",
         body: formData,
       });

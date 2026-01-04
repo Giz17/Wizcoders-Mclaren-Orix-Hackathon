@@ -268,7 +268,8 @@ export const downloadFile = (content, filename, mimeType) => {
  * Download as Word document (using html2pdf or similar)
  */
 export async function downloadAsWord(memo, filename = "credit_memo.docx") {
-    const res = await fetch("https://huggingface.co/spaces/giz17/Wizcoders-Mclaren-Orix-Hackathon/download/word", {
+    const API_URL = import.meta.env.VITE_API_URL || "https://giz17-wizcoders-mclaren-orix-hackathon.hf.space";
+    const res = await fetch(`${API_URL}/download/word`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(memo)
@@ -291,7 +292,8 @@ export async function downloadAsWord(memo, filename = "credit_memo.docx") {
  */
 export const simplifyText = async (text, apiKey) => {
     try {
-        const response = await fetch('/api/simplify', {
+        const API_URL = import.meta.env.VITE_API_URL || "https://giz17-wizcoders-mclaren-orix-hackathon.hf.space";
+        const response = await fetch(`${API_URL}/api/simplify`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
