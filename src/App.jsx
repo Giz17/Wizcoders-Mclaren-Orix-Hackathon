@@ -34,7 +34,7 @@ const Analysis = () => {
 
     try {
       // Connect to the actual backend endpoint
-      const response = await fetch("https://huggingface.co/spaces/giz17/Wizcoders-Mclaren-Orix-Hackathon/analyze", {
+      const response = await fetch("https://huggingface.co/spaces/giz17/Wizcoders-Mclaren-Orix-Hackathon/docs#/default/analyze_financial_statement_analyze_post", {
         method: "POST",
         body: formData,
       });
@@ -173,4 +173,5 @@ function App() {
 }
 
 export default App;
+
 
